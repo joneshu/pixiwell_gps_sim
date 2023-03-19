@@ -1,16 +1,6 @@
 # GPS-SDR-SIM
 
-GPS-SDR-SIM generates GPS baseband signal data streams, which can be converted 
-to RF using software-defined radio (SDR) platforms, such as 
-[ADALM-Pluto](https://wiki.analog.com/university/tools/pluto), [bladeRF](http://nuand.com/), [HackRF](https://github.com/mossmann/hackrf/wiki), and [USRP](http://www.ettus.com/).
 
-### Windows build instructions
-
-1. Start Visual Studio.
-2. Create an empty project for a console application.
-3. On the Solution Explorer at right, add "gpssim.c" and "getopt.c" to the Souce Files folder.
-4. Select "Release" in Solution Configurations drop-down list.
-5. Build the solution.
 
 ### Building with GCC
 
@@ -66,9 +56,7 @@ The maximum simulation duration time is defined by USER_MOTION_SIZE to
 prevent the output file from getting too large.
 
 The output file size can be reduced by using "-b 1" option to store 
-four 1-bit I/Q samples into a single byte. 
-You can use [bladeplayer](https://github.com/osqzss/gps-sdr-sim/tree/master/player)
-for bladeRF to playback the compressed file.
+
 
 ```
 Usage: gps-sdr-sim [options]
@@ -133,7 +121,7 @@ You can also execute these commands via the `bladeRF-cli` script option as below
 > bladeRF-cli -s bladerf.script
 ```
 
-#### HackRF:
+#### PIXIWELL_RF:
 
 The output data have to be 8-bit signed I/Q samples.
 ```
@@ -183,7 +171,4 @@ Set RF bandwidth:
 ```
 Default 3.0MHz. Applicable range 1.0MHz to 5.0MHz.
 
-### License
 
-Copyright &copy; 2015-2022 Takuji Ebinuma  
-Distributed under the [MIT License](http://www.opensource.org/licenses/mit-license.php).
