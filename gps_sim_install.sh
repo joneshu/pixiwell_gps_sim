@@ -21,4 +21,7 @@ echo "gcc gps_sim "
     
 gcc gpssim.c -lm -fopenmp -o gps-sdr-sim
 
+#./gps-sdr-sim -e brdc0010.22n -l 22.7914339642669,114.50057016394189,100 -b 8  -o gpssim.c8
+
+
 
