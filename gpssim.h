@@ -17,7 +17,7 @@
 
 /*! \brief Maximum number of user motion points */
 #ifndef USER_MOTION_SIZE
-#define USER_MOTION_SIZE (36000) // max duration at 10Hz
+#define USER_MOTION_SIZE (18000) // max duration at 10Hz
 #endif
 
 /*! \brief Maximum duration for static mode*/
